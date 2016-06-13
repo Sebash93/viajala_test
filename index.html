@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row title center-flex middle-flex mv-xl">
+      <span class="small">Just</span> Pick your momment
+    </div>
+    <div class="bar-container ph-m pv-m mv-xl">
+      <div class="row inputs-bar center-flex">
+        <input type="text" placeholder="From">
+        <input type="text" placeholder="To">
+        <div class="group">
+          <input type="text" placeholder="Departure date" id="departure-date" onfocus="showDatePicker('departure')">
+        </div>
+        <div class="group">
+          <input type="text" placeholder="Arrival date" id="return-date" onfocus="showDatePicker('return')">
+        </div>        
+        <input type="button" value="Search" class="button" onclick="search()">
+      </div>
+      <div class="row center-flex pt-xs">
+        Pick a location and a momment, we'll do the rest
+      </div>
+    </div>
+    <div id="searchMessage" class="row date-message mv-xl center-flex">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+    <div class="date-picker hidden">
+      <div class="calendar">
+        <div class="header">
+          <div class="arrow-btn">&#60;</div>
+          <div class="month">
+            <span onclick="show('months-tooltip')">Septiembre</span>
+            <span>2016</span>
+          </div>          
+          <div class="arrow-btn">&#62;</div>
+        </div>
+        <div class="days-grid">
+          <table>
+            <thead>
+              <tr>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="selected">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="months-tooltip" class="tooltip  hidden">
+        <table>
+          <tr>
+            <td class="disabled">JAN</td>
+            <td>FEB</td>
+          </tr>
+          <tr>
+            <td>MAR</td>
+            <td>APR</td>
+          </tr>
+          <tr>
+            <td>MAY</td>
+            <td>JUN</td>
+          </tr>
+          <tr>
+            <td>JUL</td>
+            <td>AUG</td>
+          </tr>
+          <tr>
+            <td>SEP</td>
+            <td>OCT</td>
+          </tr>
+          <tr>
+            <td>NOV</td>
+            <td>DIC</td>
+          </tr>
+        </table>
+      </div>
+      <div class="tooltip years hidden">
+        <table>
+          <tr>
+            <td class="disabled">2016</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="js/ui.js" charset="utf-8"></script>
+  <script src="js/dates.js" charset="utf-8"></script>
+  <script src="js/datePicker.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:400,300");
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background: url("../assets/images/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.hidden {
+  display: none !important;
+}
+.row {
+  display: flex;
+}
+.center-flex {
+  justify-content: center;
+}
+.bottom-flex {
+  align-items: flex-end;
+}
+.middle-flex {
+  align-items: center;
+}
+.self-bottom {
+  align-self: flex-end;
+}
+.mh-m {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.mh-l {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.mv-xl {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.ph-m {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+.pv-m {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+.pt-xs {
+  padding-top: 0.8rem;
+}
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 7.2rem;
+}
+.title .small {
+  font-weight: normal;
+  font-size: 3.2rem;
+}
+.bar-container {
+  background: rgba(0,0,0,0.6);
+}
+.bar-container .inputs-bar > input {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+.bar-container .inputs-bar > input:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+.bar-container .inputs-bar input[type="text"]:focus {
+  outline: none;
+}
+.bar-container .inputs-bar .group {
+  position: relative;
+}
+.bar-container .inputs-bar .group input {
+  padding-left: 12px;
+  padding-right: 12px;
+  min-height: 44px;
+  border: 1px solid #ccc;
+}
+.bar-container .inputs-bar .button {
+  background: #009688;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  border-color: #009688;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 0px 5px 5px 0px;
+}
+.date-picker {
+  position: absolute;
+  top: 60px;
+  min-width: 300px;
+}
+.date-picker .calendar {
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  color: #000;
+  display: inline-block;
+  position: absolute;
+  font-weight: bold;
+}
+.date-picker .calendar .header {
+  display: flex;
+  justify-content: center;
+}
+.date-picker .calendar .header .arrow-btn {
+  min-width: 20px;
+  text-align: center;
+}
+.date-picker .calendar .header .month {
+  width: 150px;
+  text-align: center;
+}
+.date-picker .calendar .days-grid {
+  text-align: center;
+}
+.date-picker .calendar .days-grid th {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #969696;
+}
+.date-picker .calendar .days-grid td {
+  width: 30px;
+  height: 30px;
+}
+.date-picker .calendar .days-grid td.selected {
+  background: #009688;
+  color: #fff;
+  border-radius: 50%;
+}
+.date-picker .calendar .days-grid td.no-current {
+  opacity: 0.4;
+  font-weight: normal;
+}
+.date-picker .calendar .days-grid td.disabled {
+  background: #ccc;
+  color: #969696;
+  cursor: not-allowed;
+}
+.date-picker .tooltip {
+  background: #009688;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.date-picker .tooltip td {
+  padding: 3px 5px;
+}
+.date-picker .tooltip .disabled {
+  color: #00796b;
+}
+.date-message {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.4rem;
+}
